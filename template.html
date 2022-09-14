@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main-elem">
+        <div class="test-elem">
+            <div class="button move-buttons-center_center button-test">
+                Сброс
+            </div>
+            <input type="text" placeholder="Адрес сервера" class="other-input button-test">
+            <div class="button move-buttons-center_center button-test">
+                Загрузить на сервер
+            </div>
+            <div class="button move-buttons-center_center button-test">
+                Выгрузить с сервера
+            </div>
+        </div>
+        <div class="bottom-main">
+            <div class="move-buttons">
+                <div class="move-buttons-center">
+                    <div class="button">
+                        &rsaquo;
+                    </div>
+                    <div class="button">
+                        &raquo;
+                    </div>
+                    <div class="button">
+                        &lsaquo;
+                    </div>
+                    <div class="button">
+                        &laquo;
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="header"><span>Available</span></div>
+                <div class="search-block">
+                    <input type="text" placeholder="Search by name">
+                </div>
+                <div class="content-block">
+                    <!--Эти блоки реализовать через цикл-->
+                    <div class="list-elem">
+                        <div class="image-in-block">
+                            <span>
+                                This is a block!
+                            </span>
+                        </div>
+    
+                    </div>
+                    <!--Эти блоки реализовать через цикл-->
+                </div>
+            </div>
+            <div class="move-buttons">
+                <div class="move-buttons-center">
+                    <div class="button move-buttons-center_center">
+                        &rsaquo;
+                    </div>
+                    <div class="button move-buttons-center_center">
+                        &raquo;
+                    </div>
+                    <div class="button move-buttons-center_center">
+                        &lsaquo;
+                    </div>
+                    <div class="button move-buttons-center_center">
+                        &laquo;
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="header"><span>Selected</span></div>
+                <div class="search-block">
+                    <input type="text" placeholder="Search by name">
+                </div>
+                <div class="content-block">
+                    <!--Эти блоки реализовать через цикл-->
+                    <div class="list-elem">
+    
+                    </div>
+                    <!--Эти блоки реализовать через цикл-->
+                </div>
+            </div>
+            <div class="move-buttons">
+                <div class="move-buttons-center">
+                    <div class="button">
+                        &rsaquo;
+                    </div>
+                    <div class="button">
+                        &raquo;
+                    </div>
+                    <div class="button">
+                        &lsaquo;
+                    </div>
+                    <div class="button">
+                        &laquo;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+/*styleButtons(){
+    let buttonLeft = this.currentElem.querySelector('.leftbut')
+    buttonLeft = Array.from(buttonLeft.querySelectorAll('.button'))
+    let buttonCenter = this.currentElem.querySelector('.centerbut')
+    buttonCenter = Array.from(buttonCenter.querySelectorAll('.button'))
+    let buttonRight = this.currentElem.querySelector('.rightbut')
+    buttonRight = Array.from(buttonRight.querySelectorAll('.button'))
+    for(let i in buttonLeft){
+        if(buttonLeft[i].getAttribute('data-role') == 'up' || buttonLeft[i].getAttribute('data-role') == 'allup'){
+            if(!this.selectedElem.getAttribute('data-type') == 'sel' || this.selectedElem.getAttribute('data-index') == 0){
+                if(!buttonLeft[i].classList.contains('button-disabled')){
+                    buttonLeft[i].classList.add('button-disabled')
+                    buttonLeft[i].removeEventListener('click',this.moveUp)
+                }
+            }
+            else{
+                if(buttonLeft[i].classList.contains('button-disabled')){
+                    buttonLeft[i].classList.remove('button-disabled')
+                    buttonLeft[i].addEventListener('click',this.moveUp)
+                }
+            }
+        }
+        if(buttonLeft[i].getAttribute('data-role') == 'down' || buttonLeft[i].getAttribute('data-role') == 'alldown'){
+            if(!this.selectedElem.getAttribute('data-type') == 'sel' || this.selectedElem.getAttribute('data-index') == this.availableList.length - 1){//Сделать
+                if(!buttonLeft[i].classList.contains('button-disabled')){
+                    buttonLeft[i].classList.add('button-disabled')
+                    buttonLeft[i].removeEventListener('click',this.moveDown)
+                }
+            }
+            else{
+                if(buttonLeft[i].classList.contains('button-disabled')){
+                    buttonLeft[i].classList.remove('button-disabled')
+                    buttonLeft[i].addEventListener('click',this.moveDown)
+                }
+            }
+        }
+    }
+    for(let i in buttonCenter){
+        
+    }
+    for(let i in buttonRight){
+        
+    }
+    //При каждом изменении списка вызываем этот метод, проверяем список и на основе этого добавляем/удаляем нужные события
+    //Также меняем прозрачность кнопок в зависимости от присутствующих событий
+}*/
